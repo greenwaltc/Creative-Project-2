@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+
+<!-- Nutritionix API Key: d2f382a9d9a4f3012119f045afc00c70 -->
+<!-- Nutritionix Application ID: 96162f5f -->
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Creative Project 2</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='styles.css' />
+</head>
+
+<body>
+
+    <div class='content'>
+        <form class="pure-form>" <fieldset>
+            <legend>Search For Food Nutrition Facts or Exercise Calories Burned</legend>
+            <br>
+            <img src="/images/NutritionixAPI_hires_flat.png" alt="">
+            <p></p>
+            <select id="selector">
+                <option value="food">Food</option>
+                <option value="exercise">Exercise</option>
+                <option value="restaurant">Restaurant</option>
+            </select>
+            <p></p>
+            <p id='search-instructions'></p>
+            <div id='field-entries'>
+                <input placeholder="" id="field">
+            </div>
+            <button id="search" class="pure-button">SEARCH</button>
+            <p id='search-button-comment'></p>
+            </fieldset>
+        </form>
+
+        <div id='search-results'>
+            
+        </div>
+    </div>
+
+    <p>Note: finding nutrition facts uses 2 different API endpoints. The first is to
+        find the generic food item. That information is then used with the natural language
+        processing API to get nutitional information. Thus, a total of 3 API endpoints are
+        used.
+    </p>
+
+    <!-- Footer -->
+    <footer class="footer">
+		<div class="container">
+			<span class="text-muted"><a href="https://github.com/BYU-CS-260-Winter-2021/lab-1-photography-website-greenwaltc">GitHub Classroom</a></span>
+		</div>
+	</footer>
+    
+    <script src="script.js" async defer></script>
+</body>
+
+</html>
